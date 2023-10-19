@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <record model="ir.ui.view" id="view_event_form_description">
+        <field name="name">event.event.ticket.view.tree.from.event.inherit.sequence</field>
+        <field name="model">event.event.ticket</field>
+        <field name="priority" eval="2" />
+        <field name="inherit_id" ref="event.event_event_ticket_view_tree_from_event"/>
+        <field name="arch" type="xml">
+            <field name="name" position="before">
+                <field name="sequence" widget="handle"/>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+    <record model="ir.ui.view" id="view_event_form_description">
+        <field name="name">event.event.form.description</field>
+        <field name="model">event.event</field>
+        <field name="priority">2</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="event.view_event_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='event_notes']" position="after">
+                <page string="Description" name="event_description">
+                    <field name="description" />
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
